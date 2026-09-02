@@ -14,8 +14,41 @@ export default function Servicios() {
             Servicios de Logística y Procesamiento Ferroso
           </h1>
           <p className="text-slate-600 text-lg leading-relaxed">
-            Otorgamos soluciones de acopio, valorización y adecuación de materiales metálicos, integrando eficiencia logística con el más estricto cumplimiento normativo.
+            Otorgamos soluciones de acopio, valorización y adecuación de materiales metálicos, integrando eficiencia logística con el más estricto cumplimiento normativo (Ley REP 20.920, DS 148, DS 43).
           </p>
+        </section>
+
+        {/* Productos de Compra */}
+        <section className="bg-white border-y border-slate-200 py-10">
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div>
+                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                 </div>
+                 <h4 className="font-black text-slate-900 uppercase">Fierro de Construcción</h4>
+              </div>
+              <div>
+                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                 </div>
+                 <h4 className="font-black text-slate-900 uppercase">Pletina</h4>
+                 <p className="text-xs text-slate-500">Rollo de acero negro</p>
+              </div>
+              <div>
+                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                 </div>
+                 <h4 className="font-black text-slate-900 uppercase">Chatarra Mixta</h4>
+                 <p className="text-xs text-slate-500">Perfiles y planchas</p>
+              </div>
+              <div>
+                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                 </div>
+                 <h4 className="font-black text-slate-900 uppercase">Lata</h4>
+                 <p className="text-xs text-slate-500">Planchas, zunchos, alambrones</p>
+              </div>
+           </div>
         </section>
 
         {/* Logística en Terreno */}
@@ -27,15 +60,15 @@ export default function Servicios() {
             <h2 className="text-3xl font-black text-slate-900 uppercase">Logística de Bateas y Ampli-Roll</h2>
             <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
               <p>
-                Nuestra operación en terreno se ejecuta mediante una alianza estratégica con <strong>Transportes Basualto Limitada</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll para maniobras de precisión y retiro de alto tonelaje.
+                Nuestra operación en terreno se ejecuta mediante una alianza estratégica con <strong>Transportes Basualto Limitada</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll autocargantes para maniobras de precisión y retiro de alto tonelaje.
               </p>
               <ul className="list-disc list-inside space-y-2 text-slate-700 font-medium pt-2">
-                <li>Parque de 20 bateas modulares de acero.</li>
-                <li>Capacidades adaptables de 10 y 20 metros cúbicos.</li>
+                <li>Bateas (Tolvas) adaptables a su espacio: <strong>3 m³, 8 m³, 10 m³ y 20 m³</strong>.</li>
                 <li>Instalación y reposición directa en obras y faenas.</li>
+                <li>Pesaje exacto en nuestra propia romana de 60 toneladas.</li>
               </ul>
               <p className="pt-2 text-red-600 font-bold">
-                Ventaja de Valor: Evitamos la acumulación de despuntes, permitiendo a su empresa mantener un entorno limpio, accesible y seguro, sin paralizar sus operaciones productivas.
+                Ventaja de Valor: Evitamos la acumulación de despuntes, permitiendo a su empresa mantener un entorno limpio, accesible y seguro.
               </p>
             </div>
             <div className="pt-4">
@@ -48,7 +81,7 @@ export default function Servicios() {
              <div className="text-center space-y-4">
                 <svg className="w-24 h-24 text-slate-700 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
                 <h3 className="text-2xl font-black text-white uppercase">Retiro de Alto Tonelaje</h3>
-                <p className="text-slate-400 text-sm">Flota especializada para la gran industria.</p>
+                <p className="text-slate-400 text-sm">Camiones Ampli-roll y Autocargantes.</p>
              </div>
           </div>
         </section>
@@ -87,24 +120,17 @@ export default function Servicios() {
             <span className="inline-block bg-slate-100 text-slate-700 text-xs font-black uppercase px-3 py-1 rounded w-max">
               Transporte Autorizado
             </span>
-            <h2 className="text-3xl font-black text-slate-900 uppercase">Transporte de Residuos con Resolución Sanitaria</h2>
+            <h2 className="text-3xl font-black text-slate-900 uppercase">Transporte de Sustancias y Residuos</h2>
             <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
               <p>
-                Contamos con <strong>Resolución Sanitaria vigente</strong> que nos autoriza para el transporte de residuos peligrosos y no peligrosos, cumpliendo con la normativa aplicable y los estándares exigidos para una gestión segura y responsable.
-              </p>
-              <p>
-                Nuestro servicio permite entregar a nuestros clientes una solución integral para el retiro, transporte y gestión de sus residuos, asegurando trazabilidad, cumplimiento normativo y seguridad durante todo el proceso.
+                Contamos con <strong>Resolución Sanitaria vigente</strong> que nos autoriza para el almacenamiento y transporte de <strong>Sustancias Peligrosas y Residuos Peligrosos (SP y RP)</strong>, cumpliendo rigurosamente con los decretos MINSAL N°148 y N°43, así como las normativas NCh 382, 2190 y 2245.
               </p>
               <ul className="space-y-2 text-slate-700 font-medium pt-2">
-                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Transporte de residuos peligrosos</li>
-                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Transporte de residuos no peligrosos</li>
-                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Resolución Sanitaria vigente</li>
-                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Gestión y traslado seguro</li>
-                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Trazabilidad y respaldo documental</li>
+                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Bodegaje estructural certificado (DS 43)</li>
+                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Transporte de residuos peligrosos y no peligrosos</li>
+                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Rotulación y señalización bajo NCh</li>
+                <li className="flex items-center gap-2"><svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg> Entregable peligroso (Mensual o Única vez)</li>
               </ul>
-              <p className="pt-2 text-slate-800 font-bold italic">
-                Confíe el transporte de sus residuos a una empresa autorizada y comprometida con una gestión responsable.
-              </p>
             </div>
           </div>
           <div className="lg:w-1/2 bg-slate-100 p-10 md:p-14 flex items-center justify-center border-r-8 border-slate-900">
@@ -119,12 +145,12 @@ export default function Servicios() {
         {/* Trazabilidad y Cumplimiento */}
         <section className="bg-slate-900 text-white rounded-2xl p-10 md:p-16 text-center space-y-8 shadow-2xl">
           <div className="max-w-3xl mx-auto space-y-4">
-            <h2 className="text-3xl font-black uppercase">Trazabilidad y Cumplimiento Medioambiental</h2>
+            <h2 className="text-3xl font-black uppercase">Trazabilidad Ambiental y Ley REP</h2>
             <p className="text-slate-400 text-base leading-relaxed">
-              Toda nuestra operación de recolección y venta está estrictamente regida bajo el Sistema Nacional de Declaración de Residuos (<strong>SINADER</strong>).
+              Toda nuestra operación se rige por la <strong>Ley N° 20.920</strong> (Responsabilidad Extendida del Productor), fomentando el reciclaje a través del Sistema Nacional de Declaración de Residuos (<strong>SINADER</strong>).
             </p>
             <p className="text-slate-400 text-base leading-relaxed">
-              Para su tranquilidad corporativa, los movimientos y excedentes de su empresa son declarados formalmente a través de la <strong>Ventanilla Única del Ministerio del Medio Ambiente</strong>, garantizando por ley la correcta disposición final de los materiales.
+              Los movimientos y excedentes de los generadores son declarados formalmente a través de la <strong>Ventanilla Única del Ministerio del Medio Ambiente (RETC)</strong>, garantizando por ley la correcta disposición final.
             </p>
           </div>
           <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-center gap-4">

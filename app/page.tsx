@@ -15,8 +15,8 @@ export default function Home() {
               Trabajo en equipo para un <span className="text-red-600 underline decoration-red-600/40 decoration-4">Futuro Sustentable</span>
             </h1>
 
-            <p className="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed text-justify">
-              La evidente crisis climática que afecta al planeta nos obliga a reutilizar los materiales para aprovechar su máxima vida útil posible, <strong className="text-red-600">M</strong><strong className="text-shadow-white">ETALYSA ACEROS</strong> ayuda en la protección del medio ambiente proporcionando un nuevo uso al fierro de construcción siendo pioneros en la región en el reciclaje de la barra de acero, entregando materia prima a las principales siderúrgicas del país para la refundación u obtención de cloruro férrico, elemento clave en la desalinización de las aguas marinas.
+            <p className="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+              La evidente crisis climática que afecta al planeta nos obliga a reutilizar los materiales para aprovechar su máxima vida útil posible, <strong className="text-red-600">M</strong><strong className="text-shadow-white">ETALYSA ACEROS</strong> ayuda en la protección del medio ambiente proporcionando un nuevo uso al fierro de construcción siendo pioneros en el reciclaje de la barra de acero, entregando materia prima a las principales siderúrgicas del país para la refundación u obtención de cloruro férrico, elemento clave en la desalinización de las aguas marinas.
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row gap-4">
@@ -38,12 +38,12 @@ export default function Home() {
           {/* Derecha: Panel de Datos Operativos e Información Nueva */}
           <div className="lg:col-span-5 bg-slate-900 border-2 border-slate-800 p-8 space-y-6 rounded-xl shadow-2xl relative">
             <div className="absolute -top-3 -right-3 bg-red-600 text-white text-xs font-black px-3 py-1 uppercase tracking-widest rounded shadow-lg">
-              Planta Talcahuano
+              Biobío y Santiago
             </div>
             
             <div className="border-b border-slate-800 pb-4">
               <span className="text-xs font-mono text-slate-500 uppercase tracking-widest block">Capacidad y Garantía Operativa</span>
-              <h2 className="text-2xl font-black text-white uppercase mt-1">Líderes Regionales</h2>
+              <h2 className="text-2xl font-black text-white uppercase mt-1">Cobertura Nacional</h2>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
@@ -53,9 +53,9 @@ export default function Home() {
                 <span className="text-slate-500 text-xs">De chatarra y barra de acero</span>
               </div>
               <div className="bg-slate-950 p-4 border border-slate-800 rounded-lg">
-                <span className="text-red-500 font-mono font-black text-2xl block mb-1">1.000<span className="text-xs"> m²</span></span>
+                <span className="text-red-500 font-mono font-black text-2xl block mb-1">6.000<span className="text-xs"> m²</span></span>
                 <span className="text-slate-200 font-bold block">Instalaciones</span>
-                <span className="text-slate-500 text-xs">Galpones de primer nivel</span>
+                <span className="text-slate-500 text-xs">Galpones y pesaje de 60 ton</span>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="block text-slate-200 text-xs font-bold uppercase">Trazabilidad Ambiental</span>
-                  <span className="block text-slate-500 text-[10px] uppercase">SINADER • Ventanilla Única MMA</span>
+                  <span className="block text-slate-500 text-[10px] uppercase">Ley REP 20.920 • SINADER</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-slate-950/50 p-3 rounded border border-slate-800">
@@ -82,6 +82,21 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Clientes de Confianza */}
+      <section className="bg-slate-100 py-10 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-6">Confían en nuestras soluciones circulares</span>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+             <span className="text-xl font-black text-slate-800">Sacyr</span>
+             <span className="text-xl font-black text-slate-800">AZA Acero</span>
+             <span className="text-xl font-black text-slate-800">Echeverría Izquierdo</span>
+             <span className="text-xl font-black text-slate-800">Icafal</span>
+             <span className="text-xl font-black text-slate-800">Pares&Alvarez</span>
+             <span className="text-xl font-black text-slate-800">Valmar</span>
+          </div>
         </div>
       </section>
 
@@ -109,7 +124,7 @@ export default function Home() {
               Captación de Chatarra
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Gestión integral de descartes metálicos y excedentes acumulados en instalaciones industriales y faenas civiles.
+              Gestión integral de descartes metálicos (fierro, pletina, planchas) acumulados en instalaciones industriales y faenas civiles.
             </p>
           </div>
 
@@ -136,23 +151,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Banner de Acción Industrial */}
-      <section className="bg-red-600 text-white py-16 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="space-y-2 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight">
-              ¿Requiere gestión de residuos ferrosos en su empresa?
-            </h2>
-            <p className="text-red-100 text-sm font-medium">
-              Evaluamos volúmenes y coordinamos logística de recepción o retiro en planta mediante sistema Ampli-Roll.
-            </p>
+      {/* Nuevo Banner de Clientes (Marquee con Imágenes) */}
+      <section className="bg-slate-100 py-16 border-y border-slate-200 overflow-hidden relative">
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 40s linear infinite;
+          }
+          .animate-marquee:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-10 text-center">
+          <h2 className="text-sm sm:text-base font-black uppercase text-slate-400 tracking-[0.2em]">
+            Nuestros Clientes
+          </h2>
+        </div>
+
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-marquee flex items-center">
+            {/* Lista duplicada con rutas de imágenes para asegurar el bucle infinito */}
+            {[
+              { nombre: "EBCO", logo: "/img/clientes/ebco.png" },
+              { nombre: "Sacyr", logo: "/img/clientes/sacyr.png" },
+              { nombre: "Pares & Alvarez", logo: "/img/clientes/pares.png" },
+              { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
+              { nombre: "AZA", logo: "/img/clientes/aza.png" },
+              { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-75" },
+              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-150" },
+              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-125" },
+              { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
+              
+              // Copia exacta para el bucle
+              { nombre: "EBCO", logo: "/img/clientes/ebco.png" },
+              { nombre: "Sacyr", logo: "/img/clientes/sacyr.png" },
+              { nombre: "Pares & Alvarez", logo: "/img/clientes/pares.png" },
+              { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
+              { nombre: "AZA", logo: "/img/clientes/aza.png" },
+              { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-75" },
+              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-150" },
+              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-125" },
+              { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
+            ].map((cliente, index) => (
+              <div 
+                key={index} 
+                className="flex shrink-0 items-center justify-center px-6 sm:px-8 mx-2 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              >
+                <img 
+                  src={cliente.logo} 
+                  alt={cliente.nombre} 
+                  className={`h-16 sm:h-24 w-40 sm:w-60 object-contain ${cliente.scale || ""}`} 
+                />
+              </div>
+            ))}
           </div>
-          <Link
-            href="/contacto"
-            className="px-8 py-4 bg-slate-950 hover:bg-slate-900 text-white font-bold text-sm uppercase tracking-wider transition-colors whitespace-nowrap shadow-xl"
-          >
-            Contactar Administración
-          </Link>
         </div>
       </section>
     </div>
