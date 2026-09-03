@@ -12,7 +12,7 @@ export default function Servicios() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent"></div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-4">
-          <span className="text-red-500 font-bold tracking-[0.2em] uppercase text-sm">Capacidades Operativas</span>
+          <span className="block mb-2 text-red-500 font-bold tracking-[0.2em] uppercase text-sm">Capacidades Operativas</span>
           <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
             Servicios Logísticos
           </h1>
@@ -140,7 +140,7 @@ export default function Servicios() {
             </p>
           </div>
           <div className="pt-8">
-            <Link href="/contacto" className="inline-flex justify-center items-center px-10 py-5 bg-white text-slate-900 font-bold tracking-widest uppercase hover:bg-slate-100 transition-colors">
+            <Link href="/contacto" className="inline-flex justify-center items-center px-10 py-5 bg-white text-slate-900 font-bold tracking-widest uppercase hover:bg-red-600 hover:text-white transition-colors">
               Coordinar Declaración de Excedentes
             </Link>
           </div>

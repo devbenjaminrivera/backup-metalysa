@@ -107,14 +107,14 @@ export default function Nosotros() {
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Planta de 6.000 m²</h4>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Más de 6.000 mt2 totales con galpones techados superiores a 1.000 mt2. Acondicionados para maniobras de grúas horquilla y camiones de gran envergadura.
+                Más de 6.000 mt² totales con galpones techados superiores a 1.000 mt². Acondicionados para maniobras de grúas horquilla y camiones de gran envergadura.
               </p>
             </div>
           </div>
 
           <div className="group space-y-6">
             <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
-              <img src="/img/empresa/batea1_hd.jpg" alt="Pesaje Certificado" className="w-full h-full object-cover transition-all duration-700" />
+              <img src="/img/empresa/batea3.png" alt="Pesaje Certificado" className="w-full h-full object-cover transition-all duration-700" />
             </div>
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Pesaje Certificado</h4>

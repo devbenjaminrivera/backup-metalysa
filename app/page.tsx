@@ -8,26 +8,25 @@ export default function Home() {
         {/* Imagen de fondo a pantalla completa */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/img/empresa/camion_rojo.png')" }}
+          style={{ backgroundImage: "url('/img/empresa/camion_rojo_hd.jpg')" }}
         ></div>
-        
+
         {/* Overlay rojo muy sutil */}
-        <div className="absolute inset-0 bg-red-900/30"></div>
+        <div className="absolute inset-0 bg-gray-900/40"></div>
 
         <div className="relative z-10 max-w-[90rem] mx-auto px-6 lg:px-12 w-full py-20 lg:py-0 mt-10 lg:mt-0">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-10">
-            
+
             {/* Izquierda: Título y Botón Principal */}
             <div className="w-full lg:w-5/12 space-y-10">
               <h1 className="text-5xl sm:text-6xl xl:text-[5rem] font-black tracking-tight uppercase text-white leading-[1.05]">
-                Trabajo en equipo para un <br/>
-                Futuro Sustentable
+                Trabajo en equipo para un <span className='ml-1 underline decoration-red-600'>Futuro Sustentable</span>
               </h1>
-              
+
               <div>
                 <Link
                   href="/contacto"
-                  className="inline-flex justify-center items-center px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 font-bold tracking-wide transition-all rounded-full"
+                  className="inline-flex justify-center items-center px-10 py-4 bg-white text-slate-900 hover:bg-red-600 hover:text-white font-bold tracking-wide transition-all rounded-full"
                 >
                   Contacto Directo
                 </Link>
@@ -36,7 +35,7 @@ export default function Home() {
 
             {/* Derecha: Texto Informativo */}
             <div className="w-full lg:w-7/12 xl:w-6/12 flex items-center lg:justify-end">
-              <div className="bg-slate-950/60 backdrop-blur-md border-l-4 border-red-600 p-8 sm:p-10 rounded-2xl shadow-2xl">
+              <div className="bg-slate-950/20 backdrop-blur-md  p-8 sm:p-10 rounded-2xl shadow-2xl">
                 <p className="text-slate-100 text-lg sm:text-xl font-medium leading-relaxed">
                   La evidente crisis climática que afecta al planeta nos obliga a reutilizar los materiales para aprovechar su máxima vida útil posible. <strong className='text-red-600 font-black'>M</strong><strong className="text-white font-black">ETALYSA ACEROS</strong> ayuda en la protección del medio ambiente proporcionando un nuevo uso al fierro de construcción siendo pioneros en el reciclaje de la barra de acero, entregando materia prima a las principales siderúrgicas del país para la refundación u obtención de cloruro férrico, elemento clave en la desalinización de las aguas marinas.
                 </p>
@@ -59,7 +58,7 @@ export default function Home() {
             <span className="text-sm font-bold uppercase tracking-widest">Instalaciones Techadas</span>
           </div>
           <div className="py-4 md:py-0">
-            <span className="text-5xl font-black block mb-2">Biobío y RM</span>
+            <span className="text-5xl font-black block mb-2">Bio-Bio y RM</span>
             <span className="text-sm font-bold uppercase tracking-widest">Cobertura Nacional</span>
           </div>
         </div>
