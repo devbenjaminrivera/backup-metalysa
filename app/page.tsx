@@ -8,7 +8,7 @@ export default function Home() {
         {/* Imagen de fondo de la empresa */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
-          style={{ backgroundImage: "url('/img/empresa/Camion%20Rojo.png')" }}
+          style={{ backgroundImage: "url('/img/empresa/camion_rojo.png')" }}
         ></div>
 
         {/* Degradado oscuro suave y corto: solo cubre la izquierda para dar contraste ligero a las letras */}

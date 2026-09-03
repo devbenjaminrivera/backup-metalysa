@@ -28,9 +28,11 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm font-medium">
             <li><Link href="/" className="hover:text-red-600 transition-colors">Inicio</Link></li>
-            <li><Link href="/nosotros" className="hover:text-red-600 transition-colors">Nosotros</Link></li>
+            <li><Link href="/productos" className="hover:text-red-600 transition-colors">Productos</Link></li>
             <li><Link href="/servicios" className="hover:text-red-600 transition-colors">Servicios</Link></li>
+            <li><Link href="/nosotros" className="hover:text-red-600 transition-colors">Nosotros</Link></li>
             <li><Link href="/contacto" className="hover:text-red-600 transition-colors">Contacto</Link></li>
+
           </ul>
         </div>
 

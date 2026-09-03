@@ -4,7 +4,7 @@ export default function Servicios() {
   return (
     <div className="min-h-screen bg-slate-50 py-16 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
-        
+
         {/* Encabezado */}
         <section className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-red-600 block">
@@ -16,39 +16,6 @@ export default function Servicios() {
           <p className="text-slate-600 text-lg leading-relaxed">
             Otorgamos soluciones de acopio, valorización y adecuación de materiales metálicos, integrando eficiencia logística con el más estricto cumplimiento normativo (Ley REP 20.920, DS 148, DS 43).
           </p>
-        </section>
-
-        {/* Productos de Compra */}
-        <section className="bg-white border-y border-slate-200 py-10">
-           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
-                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
-                 </div>
-                 <h4 className="font-black text-slate-900 uppercase">Fierro de Construcción</h4>
-              </div>
-              <div>
-                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                 </div>
-                 <h4 className="font-black text-slate-900 uppercase">Pletina</h4>
-                 <p className="text-xs text-slate-500">Rollo de acero negro</p>
-              </div>
-              <div>
-                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
-                 </div>
-                 <h4 className="font-black text-slate-900 uppercase">Chatarra Mixta</h4>
-                 <p className="text-xs text-slate-500">Perfiles y planchas</p>
-              </div>
-              <div>
-                 <div className="w-12 h-12 bg-red-100 text-red-600 rounded-full mx-auto flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
-                 </div>
-                 <h4 className="font-black text-slate-900 uppercase">Lata</h4>
-                 <p className="text-xs text-slate-500">Planchas, zunchos, alambrones</p>
-              </div>
-           </div>
         </section>
 
         {/* Logística en Terreno */}
@@ -77,39 +44,14 @@ export default function Servicios() {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/2 bg-slate-900 p-10 md:p-14 flex items-center justify-center border-l-8 border-red-600">
-             <div className="text-center space-y-4">
-                <svg className="w-24 h-24 text-slate-700 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-                <h3 className="text-2xl font-black text-white uppercase">Retiro de Alto Tonelaje</h3>
-                <p className="text-slate-400 text-sm">Camiones Ampli-roll y Autocargantes.</p>
-             </div>
-          </div>
-        </section>
+          <div className="lg:w-1/2 relative p-10 md:p-14 flex items-center justify-center border-l-8 border-red-600 bg-[url('/img/empresa/batea1.png')] bg-cover bg-center overflow-hidden">
+            {/* Overlay Sólido Claro */}
+            <div className="absolute inset-0 bg-slate-900/60 z-0"></div>
 
-        {/* Grid de Destinos (Economía Circular) */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white border border-slate-200 rounded-2xl p-10 shadow-lg space-y-6">
-            <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 border border-slate-200">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-            </div>
-            <h2 className="text-2xl font-black text-slate-900">Acondicionamiento para Siderúrgicas</h2>
-            <p className="text-slate-600 text-base leading-relaxed">
-              La chatarra y barra de acero recolectada atraviesa un riguroso proceso de corte y preparación técnica. Este material acondicionado retorna a la cadena productiva abasteciendo directamente a las principales siderúrgicas del país para su refundición.
-            </p>
-          </div>
-
-          <div className="bg-red-600 border border-red-700 rounded-2xl p-10 shadow-lg space-y-6 text-white relative overflow-hidden">
-            <div className="absolute -right-10 -top-10 opacity-10">
-              <svg className="w-64 h-64" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-            </div>
-            <div className="relative z-10 space-y-6">
-              <div className="w-14 h-14 bg-red-800/50 rounded-xl flex items-center justify-center text-white border border-red-500">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-              </div>
-              <h2 className="text-2xl font-black">Derivados: Cloruro Férrico</h2>
-              <p className="text-red-100 text-base leading-relaxed">
-                Nuestra economía circular va un paso más allá. Proveemos insumos ferrosos de alta especificidad que son el componente clave para la generación de <strong>Cloruro Férrico</strong>, un químico fundamental utilizado en los procesos tecnológicos de <strong>desalinización de aguas marinas</strong> a lo largo del país.
-              </p>
+            <div className="relative z-10 text-center space-y-4">
+              <svg className="w-24 h-24 text-slate-300/90 mx-auto drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+              <h3 className="text-2xl font-black text-white uppercase drop-shadow-lg">Retiro de Alto Tonelaje</h3>
+              <p className="text-slate-200 text-sm drop-shadow-md">Camiones Ampli-roll y Autocargantes.</p>
             </div>
           </div>
         </section>
@@ -133,12 +75,15 @@ export default function Servicios() {
               </ul>
             </div>
           </div>
-          <div className="lg:w-1/2 bg-slate-100 p-10 md:p-14 flex items-center justify-center border-r-8 border-slate-900">
-             <div className="text-center space-y-4">
-                <svg className="w-24 h-24 text-slate-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                <h3 className="text-2xl font-black text-slate-900 uppercase">Seguridad y Normativa</h3>
-                <p className="text-slate-500 text-sm">Estricto cumplimiento de protocolos sanitarios.</p>
-             </div>
+          <div className="lg:w-1/2 relative p-10 md:p-14 flex items-center justify-center border-r-8 border-slate-900 bg-[url('/img/empresa/camion_garra.png')] bg-cover bg-center overflow-hidden">
+            {/* Overlay Sólido Claro */}
+            <div className="absolute inset-0 bg-slate-900/60 z-0"></div>
+
+            <div className="relative z-10 text-center space-y-4">
+              <svg className="w-24 h-24 text-slate-300/90 mx-auto drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <h3 className="text-2xl font-black text-white uppercase drop-shadow-lg">Seguridad y Normativa</h3>
+              <p className="text-slate-200 text-sm drop-shadow-md">Estricto cumplimiento de protocolos sanitarios.</p>
+            </div>
           </div>
         </section>
 
@@ -154,9 +99,9 @@ export default function Servicios() {
             </p>
           </div>
           <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="/contacto" className="inline-block px-8 py-4 bg-white text-slate-900 font-black text-sm uppercase rounded-lg hover:bg-slate-100 transition-colors shadow-lg">
-                Coordinar Declaración de Excedentes
-             </Link>
+            <Link href="/contacto" className="inline-block px-8 py-4 bg-white text-slate-900 font-black text-sm uppercase rounded-lg hover:bg-slate-100 transition-colors shadow-lg">
+              Coordinar Declaración de Excedentes
+            </Link>
           </div>
         </section>
 
