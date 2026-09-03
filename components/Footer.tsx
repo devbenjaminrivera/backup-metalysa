@@ -44,8 +44,15 @@ export default function Footer() {
           <div className="space-y-2 text-sm">
             <p className="text-slate-700 font-medium">Jaime Repullo #385</p>
             <p className="text-slate-600">Talcahuano, Región del Biobío</p>
+            <p className="text-slate-600 mt-2 font-semibold">Contacto Comercial</p>
+            <p className="text-slate-600">Isabel Alvarez (Gerente Comercial)</p>
             <p className="text-slate-600">Tel: +56 9 6218 5107</p>
             <p className="text-slate-600">Email: administracion@metalysa.cl</p>
+            <div className="text-slate-600 mt-2">
+              <span className="font-semibold block mb-1">Horario de Atención:</span>
+              Lunes a Jueves: 8:00 - 17:30 hrs<br/>
+              Viernes: 8:00 - 16:30 hrs
+            </div>
           </div>
         </div>
 
