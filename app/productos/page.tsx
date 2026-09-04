@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function Productos() {
     return (
         <div className="min-h-screen bg-white">
-            
+
             {/* 1. Hero Corporativo */}
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-slate-900 overflow-hidden">
-                <div 
+                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
                     style={{ backgroundImage: "url('/img/empresa/chatarra_mixta.png')" }}
                 ></div>
@@ -127,33 +127,33 @@ export default function Productos() {
                 </div>
             </section>
 
-            {/* 4. Productos Procesados (Salida) - Layout asimétrico oscuro */}
+            {/* 4. Productos Procesados (Salida) - Layout asimétrico claro */}
             <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-black text-slate-900 uppercase">Insumos de <span className="text-red-600 font-black">Salida</span></h2>
                     <div className="w-12 h-1.5 bg-red-600 mt-6"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-slate-900">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     {/* Bloque 1 */}
-                    <div className="bg-slate-900 p-12 md:p-16 text-white space-y-6">
-                        <span className="text-red-500 font-bold tracking-[0.2em] uppercase text-xs">Siderúrgicas</span>
-                        <h3 className="text-3xl font-black uppercase">Acero Acondicionado</h3>
-                        <p className="text-slate-400 text-lg leading-relaxed">
+                    <div className="bg-slate-50 border-[3px] border-slate-900 p-10 md:p-14 space-y-6">
+                        <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-xs">Siderúrgicas</span>
+                        <h3 className="text-3xl font-black uppercase text-slate-900">Acero Acondicionado</h3>
+                        <p className="text-slate-600 text-lg leading-relaxed">
                             La chatarra y barra de acero recolectada atraviesa un riguroso proceso de corte mecánico y preparación técnica en nuestras instalaciones.
                         </p>
-                        <p className="text-slate-300 font-medium">
+                        <p className="text-slate-900 font-medium">
                             Este material retorna a la cadena productiva abasteciendo a las principales siderúrgicas del país para su refundición, asegurando calidad y densidad.
                         </p>
                     </div>
                     {/* Bloque 2 */}
-                    <div className="bg-red-600 p-12 md:p-16 text-white space-y-6">
+                    <div className="bg-slate-50 border-[3px] border-red-600 p-10 md:p-14 space-y-6">
                         <span className="text-slate-900 font-bold tracking-[0.2em] uppercase text-xs">Desalinización</span>
                         <h3 className="text-3xl font-black uppercase text-slate-900">Derivados: Cloruro Férrico</h3>
-                        <p className="text-red-100 text-lg leading-relaxed">
+                        <p className="text-slate-600 text-lg leading-relaxed">
                             Proveemos insumos ferrosos de altísima especificidad química, yendo más allá del reciclaje tradicional.
                         </p>
-                        <p className="text-white font-bold">
+                        <p className="text-slate-900 font-medium">
                             Nuestros insumos son el componente clave para la síntesis de Cloruro Férrico, un químico fundamental utilizado en la desalinización de aguas marinas a nivel nacional.
                         </p>
                     </div>

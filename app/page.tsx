@@ -91,24 +91,29 @@ export default function Home() {
           <div className="animate-marquee flex items-center">
             {[
               { nombre: "EBCO", logo: "/img/clientes/ebco.png", scale: "scale-125" },
-              { nombre: "Sacyr", logo: "/img/clientes/sacyr.png", scale: "scale-125" },
-              { nombre: "Pares & Alvarez", logo: "/img/clientes/pares.png", scale: "scale-90" },
+              { nombre: "Esperanza", logo: "/img/clientes/esperanza.png", scale: "scale-110" },
+              { nombre: "Enap", logo: "/img/clientes/enap.png", scale: "scale-100" },
               { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
               { nombre: "AZA", logo: "/img/clientes/aza.png", scale: "scale-90" },
               { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-110" },
-              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-150" },
-              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-150" },
+              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-190" },
+              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-190" },
               { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
+              { nombre: "Altos del Valle Blanco", logo: "/img/clientes/valle.png", scale: "scale-125" },
+              { nombre: "Noval", logo: "/img/clientes/noval.png", scale: "scale-125" },
+
 
               { nombre: "EBCO", logo: "/img/clientes/ebco.png", scale: "scale-125" },
-              { nombre: "Sacyr", logo: "/img/clientes/sacyr.png", scale: "scale-125" },
-              { nombre: "Pares & Alvarez", logo: "/img/clientes/pares.png", scale: "scale-90" },
+              { nombre: "Esperanza", logo: "/img/clientes/esperanza.png", scale: "scale-110" },
+              { nombre: "Enap", logo: "/img/clientes/enap.png", scale: "scale-100" },
               { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
               { nombre: "AZA", logo: "/img/clientes/aza.png", scale: "scale-90" },
               { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-110" },
-              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-150" },
-              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-150" },
+              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-190" },
+              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-190" },
               { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
+              { nombre: "Altos del Valle Blanco", logo: "/img/clientes/valle.png", scale: "scale-125" },
+              { nombre: "Noval", logo: "/img/clientes/noval.png", scale: "scale-125" },
             ].map((cliente, index) => (
               <div
                 key={index}
