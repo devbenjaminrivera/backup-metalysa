@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Productos() {
     return (
@@ -28,29 +29,29 @@ export default function Productos() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-left">
                     <div className="group">
-                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6">
-                            <img src="/img/empresa/fierro_construcion.png" alt="Fierro de Construcción" className="w-full h-full object-contain transition-transform duration-500" />
+                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6 relative">
+                            <Image src="/img/empresa/fierro_construcion.png" alt="Fierro de Construcción" fill className="object-contain transition-transform duration-500" />
                         </div>
                         <h4 className="font-black text-slate-900 uppercase text-lg border-l-2 border-red-600 pl-3">Fierro de Construcción</h4>
                         <p className="text-sm text-slate-500 mt-2 pl-3">Despuntes y excedentes</p>
                     </div>
                     <div className="group">
-                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6">
-                            <img src="/img/empresa/pletina.png" alt="Pletina" className="w-full h-full object-contain transition-transform duration-500" />
+                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6 relative">
+                            <Image src="/img/empresa/pletina.png" alt="Pletina" fill className="object-contain transition-transform duration-500" />
                         </div>
                         <h4 className="font-black text-slate-900 uppercase text-lg border-l-2 border-slate-900 pl-3">Pletina</h4>
                         <p className="text-sm text-slate-500 mt-2 pl-3">Rollo de acero negro</p>
                     </div>
                     <div className="group">
-                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6">
-                            <img src="/img/empresa/chatarra_mixta.png" alt="Chatarra Mixta" className="w-full h-full object-contain transition-transform duration-500" />
+                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6 relative">
+                            <Image src="/img/empresa/chatarra_mixta.png" alt="Chatarra Mixta" fill className="object-contain transition-transform duration-500" />
                         </div>
                         <h4 className="font-black text-slate-900 uppercase text-lg border-l-2 border-slate-400 pl-3">Chatarra Mixta</h4>
                         <p className="text-sm text-slate-500 mt-2 pl-3">Perfiles y planchas estructurales</p>
                     </div>
                     <div className="group">
-                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6">
-                            <img src="/img/empresa/lata.png" alt="Lata" className="w-full h-full object-contain transition-transform duration-500" />
+                        <div className="w-full h-44 sm:h-60 mx-auto flex items-center justify-center mb-6 relative">
+                            <Image src="/img/empresa/lata.png" alt="Lata" fill className="object-contain transition-transform duration-500" />
                         </div>
                         <h4 className="font-black text-slate-900 uppercase text-lg border-l-2 border-slate-300 pl-3">Lata</h4>
                         <p className="text-sm text-slate-500 mt-2 pl-3">Planchas, zunchos, alambrones</p>
@@ -71,7 +72,7 @@ export default function Productos() {
                         <div className="w-full md:w-1/3 flex flex-col">
                             <div className="w-full h-64 md:h-72 overflow-hidden relative">
                                 <div className="absolute top-0 left-0 bg-red-600 text-white font-black text-xl px-4 py-2 z-10">01</div>
-                                <img src="/img/proceso/proceso1.png" alt="Recolección" className="w-full h-full object-cover transition-all duration-700" />
+                                <Image src="/img/proceso/proceso1.png" alt="Recolección" fill className="object-cover transition-all duration-700" />
                             </div>
                             <div className="w-full mt-6">
                                 <h3 className="text-2xl font-black text-slate-900 uppercase">Recolección</h3>
@@ -89,10 +90,10 @@ export default function Productos() {
                             <div className="flex flex-col gap-4">
                                 <div className="w-full h-32 md:h-[8.5rem] overflow-hidden relative">
                                     <div className="absolute top-0 left-0 bg-slate-900 text-white font-black text-xl px-4 py-2 z-10">02</div>
-                                    <img src="/img/proceso/proceso2%20(2).png" alt="Recepción de Chatarra" className="w-full h-full object-cover transition-all duration-700" />
+                                    <Image src="/img/proceso/proceso2%20(2).png" alt="Recepción de Chatarra" fill className="object-cover transition-all duration-700" />
                                 </div>
                                 <div className="w-full h-32 md:h-[8.5rem] overflow-hidden relative">
-                                    <img src="/img/proceso/proceso2.png" alt="Recepción de Pletina" className="w-full h-full object-cover transition-all duration-700" />
+                                    <Image src="/img/proceso/proceso2.png" alt="Recepción de Pletina" fill className="object-cover transition-all duration-700" />
                                 </div>
                             </div>
                             <div className="w-full mt-6">
@@ -111,10 +112,10 @@ export default function Productos() {
                             <div className="flex flex-col gap-4">
                                 <div className="w-full h-32 md:h-[8.5rem] overflow-hidden relative">
                                     <div className="absolute top-0 left-0 bg-slate-400 text-white font-black text-xl px-4 py-2 z-10">03</div>
-                                    <img src="/img/proceso/proceso%203.png" alt="Fierro Procesado 1" className="w-full h-full object-cover transition-all duration-700" />
+                                    <Image src="/img/proceso/proceso%203.png" alt="Fierro Procesado 1" fill className="object-cover transition-all duration-700" />
                                 </div>
                                 <div className="w-full h-32 md:h-[8.5rem] overflow-hidden relative">
-                                    <img src="/img/proceso/proceso%203%20(2).png" alt="Fierro Procesado 2" className="w-full h-full object-cover transition-all duration-700" />
+                                    <Image src="/img/proceso/proceso%203%20(2).png" alt="Fierro Procesado 2" fill className="object-cover transition-all duration-700" />
                                 </div>
                             </div>
                             <div className="w-full mt-6">

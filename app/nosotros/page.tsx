@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Nosotros() {
   return (
     <div className="min-h-screen bg-white">
       
-      {/* 1. Hero Corporativo (Banner Principal) */}
+      {/*Hero Corporativo */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-slate-900 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
@@ -22,7 +23,7 @@ export default function Nosotros() {
         </div>
       </section>
 
-      {/* 2. Historia y Evolución (Asimetría Elegante) */}
+      {/* Historia y Evolución*/}
       <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
@@ -43,12 +44,12 @@ export default function Nosotros() {
             </div>
           </div>
           <div className="relative">
-            {/* Foto real del equipo */}
             <div className="aspect-[4/3] w-full relative z-10">
-              <img 
+              <Image 
                 src="/img/empresa/equipo.png" 
                 alt="Equipo de Metalysa Aceros" 
-                className="w-full h-full object-cover rounded-sm shadow-2xl"
+                fill
+                className="object-cover rounded-sm shadow-2xl"
               />
             </div>
             {/* Elemento de diseño asimétrico */}
@@ -58,7 +59,7 @@ export default function Nosotros() {
         </div>
       </section>
 
-      {/* 3. Misión y Visión (Limpieza Visual) */}
+      {/* Misión y Visión */}
       <section className="bg-slate-50 py-24 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
@@ -84,25 +85,37 @@ export default function Nosotros() {
             </div>
 
           </div>
+
+          {/* Valor del Reciclaje */}
+          <div className="mt-24 pt-16 border-t border-slate-200">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <h3 className="text-2xl md:text-3xl font-medium text-slate-900 italic leading-snug">
+                "Creemos firmemente que revalorizar residuos no solo es un deber ambiental, sino también una oportunidad para generar beneficios concretos."
+              </h3>
+              <p className="text-slate-600 text-lg leading-relaxed">
+                Al confiar la gestión de sus excedentes a Metalysa, su empresa no solo contribuye directamente a la economía circular, sino que percibe una <strong>generación directa de ingresos</strong> por la revalorización del material y logra una reducción sustancial en sus <strong>costos de disposición final</strong>. A esto se suma la mejora en la <strong>eficiencia operativa</strong> al mantener sus instalaciones limpias, todo lo cual se traduce en un sólido aumento de su <strong>competitividad</strong> en la industria.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 4. Infraestructura y Capacidad (Fotografías Reales) */}
+      {/* Infraestructura y Capacidad */}
       <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto space-y-16">
         <div className="max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase leading-tight mb-6">
             Infraestructura y <br/>Capacidad Operativa
           </h2>
           <p className="text-slate-600 text-lg leading-relaxed">
-            Instalaciones de primer nivel diseñadas para alto tonelaje, pesaje de precisión y máxima seguridad perimetral, operando con estándares de nivel internacional.
+            Planta de proceso autorizada, con Resolución Sanitaria para acopio y manejo de residuos ferrosos. Instalaciones de primer nivel diseñadas para alto tonelaje, pesaje de precisión y máxima seguridad perimetral.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
           <div className="group space-y-6">
-            <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
-              <img src="/img/empresa/interior%20empresa.png" alt="Planta Metalysa" className="w-full h-full object-cover transition-all duration-700" />
+            <div className="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">
+              <Image src="/img/empresa/interior%20empresa.png" alt="Planta Metalysa" fill className="object-cover transition-all duration-700" />
             </div>
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Planta de 6.000 m²</h4>
@@ -113,8 +126,8 @@ export default function Nosotros() {
           </div>
 
           <div className="group space-y-6">
-            <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
-              <img src="/img/empresa/batea3.png" alt="Pesaje Certificado" className="w-full h-full object-cover transition-all duration-700" />
+            <div className="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">
+              <Image src="/img/empresa/batea2.png" alt="Pesaje Certificado" fill className="object-cover transition-all duration-700" />
             </div>
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Pesaje Certificado</h4>
@@ -125,8 +138,8 @@ export default function Nosotros() {
           </div>
 
           <div className="group space-y-6">
-            <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
-              <img src="/img/proceso/proceso%203%20(2).png" alt="Tecnología Italiana" className="w-full h-full object-cover transition-all duration-700" />
+            <div className="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">
+              <Image src="/img/proceso/proceso%203%20(2).png" alt="Tecnología Italiana" fill className="object-cover transition-all duration-700" />
             </div>
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Tecnología Italiana</h4>

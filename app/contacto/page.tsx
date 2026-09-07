@@ -16,10 +16,9 @@ export default function Contacto() {
     setLoading(true);
     setError(null);
 
-    // TODO: Reemplaza estos valores con tus credenciales de EmailJS
-    const SERVICE_ID = 'service_pt73w9o';
-    const TEMPLATE_ID = 'template_fll4hzt';
-    const PUBLIC_KEY = '7vEbxUqgOeK-e6KkZ';
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {

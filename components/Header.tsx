@@ -85,6 +85,9 @@ export default function Header() {
           <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
             Inicio
           </Link>
+          <Link href="/productos" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
+            Productos
+          </Link>
           <Link href="/nosotros" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
             Nosotros
           </Link>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ClientMarquee from '@/components/ClientMarquee';
 
 export default function Home() {
   return (
@@ -50,7 +51,7 @@ export default function Home() {
       <section className="bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-red-500/50">
           <div className="py-4 md:py-0">
-            <span className="text-5xl font-black block mb-2">+250 TON</span>
+            <span className="text-5xl font-black block mb-2">+800 TON</span>
             <span className="text-sm font-bold uppercase tracking-widest">Procesamiento Mensual</span>
           </div>
           <div className="py-4 md:py-0">
@@ -65,70 +66,7 @@ export default function Home() {
       </section>
 
       {/* 3. Banner de Clientes (Marquee con Imágenes) */}
-      <section className="bg-slate-50 py-16 border-b border-slate-200 overflow-hidden relative">
-        <style>{`
-          @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-marquee {
-            display: flex;
-            width: max-content;
-            animation: marquee 25s linear infinite;
-          }
-          .animate-marquee:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-10 text-center">
-          <span className="text-sm font-bold text-slate-400 uppercase tracking-widest block">
-            Confían en nuestras soluciones circulares
-          </span>
-        </div>
-
-        <div className="relative w-full overflow-hidden">
-          <div className="animate-marquee flex items-center">
-            {[
-              { nombre: "EBCO", logo: "/img/clientes/ebco.png", scale: "scale-125" },
-              { nombre: "Esperanza", logo: "/img/clientes/esperanza.png", scale: "scale-110" },
-              { nombre: "Enap", logo: "/img/clientes/enap.png", scale: "scale-100" },
-              { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
-              { nombre: "AZA", logo: "/img/clientes/aza.png", scale: "scale-90" },
-              { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-110" },
-              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-190" },
-              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-190" },
-              { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
-              { nombre: "Altos del Valle Blanco", logo: "/img/clientes/valle.png", scale: "scale-125" },
-              { nombre: "Noval", logo: "/img/clientes/noval.png", scale: "scale-125" },
-
-
-              { nombre: "EBCO", logo: "/img/clientes/ebco.png", scale: "scale-125" },
-              { nombre: "Esperanza", logo: "/img/clientes/esperanza.png", scale: "scale-110" },
-              { nombre: "Enap", logo: "/img/clientes/enap.png", scale: "scale-100" },
-              { nombre: "Formac", logo: "/img/clientes/formac.png", scale: "scale-90" },
-              { nombre: "AZA", logo: "/img/clientes/aza.png", scale: "scale-90" },
-              { nombre: "OXY", logo: "/img/clientes/oxy.png", scale: "scale-110" },
-              { nombre: "Valmar", logo: "/img/clientes/valmar.png", scale: "scale-190" },
-              { nombre: "Echeverría Izquierdo", logo: "/img/clientes/echeverria.png", scale: "scale-190" },
-              { nombre: "Icafal", logo: "/img/clientes/icafal.png", scale: "scale-75" },
-              { nombre: "Altos del Valle Blanco", logo: "/img/clientes/valle.png", scale: "scale-125" },
-              { nombre: "Noval", logo: "/img/clientes/noval.png", scale: "scale-125" },
-            ].map((cliente, index) => (
-              <div
-                key={index}
-                className="flex shrink-0 items-center justify-center px-4 sm:px-6 mx-1 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-              >
-                <img
-                  src={cliente.logo}
-                  alt={cliente.nombre}
-                  className={`h-16 sm:h-24 w-40 sm:w-60 object-contain ${cliente.scale || ""}`}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ClientMarquee />
 
       {/* 4. Soluciones Industriales (Minimalista) */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">

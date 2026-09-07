@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Servicios() {
   return (
@@ -32,7 +33,7 @@ export default function Servicios() {
             <div className="w-12 h-1.5 bg-red-600"></div>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Nuestra operación en terreno se ejecuta mediante una alianza estratégica con <strong>Transportes Basualto Limitada</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll autocargantes para maniobras de precisión y retiro de alto tonelaje.
+                Nuestra operación en terreno se ejecuta directamente mediante nuestro servicio <strong>Transportes Metalysa</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll autocargantes para maniobras de precisión y retiro de alto tonelaje.
               </p>
               <ul className="space-y-4 text-slate-700 font-medium">
                 <li className="flex items-start gap-4">
@@ -60,10 +61,11 @@ export default function Servicios() {
           </div>
           <div className="relative">
             <div className="aspect-square lg:aspect-[4/5] w-full relative z-10 overflow-hidden bg-slate-100">
-              <img 
+              <Image 
                 src="/img/empresa/batea1_hd.jpg" 
                 alt="Batea Ampli-roll" 
-                className="w-full h-full object-cover transition-transform duration-700"
+                fill
+                className="object-cover transition-transform duration-700"
               />
             </div>
             {/* Acento geométrico */}
@@ -77,10 +79,11 @@ export default function Servicios() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative">
             <div className="aspect-square lg:aspect-[4/5] w-full relative z-10 overflow-hidden bg-slate-100">
-              <img 
+              <Image 
                 src="/img/empresa/camion_garra_hd.jpg" 
                 alt="Camión de Carga" 
-                className="w-full h-full object-cover transition-transform duration-700"
+                fill
+                className="object-cover transition-transform duration-700"
               />
             </div>
             {/* Acento geométrico */}
@@ -88,35 +91,21 @@ export default function Servicios() {
           </div>
           <div className="order-1 lg:order-2 space-y-8 lg:pl-10">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 uppercase leading-tight">
-              Transporte de <span className="text-red-600 block">Sustancias y Residuos</span>
+              Gestión Ambiental y <span className="text-red-600 block">Manejo de Residuos</span>
             </h2>
             <div className="w-12 h-1.5 bg-slate-900"></div>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Contamos con <strong>Resolución Sanitaria vigente</strong> que nos autoriza para el almacenamiento y transporte de <strong>Sustancias Peligrosas y Residuos Peligrosos (SP y RP)</strong>, cumpliendo rigurosamente con los decretos MINSAL N°148 y N°43, así como las normativas NCh 382, 2190 y 2245.
+                Brindamos un servicio integral de gestión ambiental para fortalecer sus prácticas industriales, garantizando el cumplimiento legal y la reducción de riesgos.
               </p>
-              <ul className="space-y-4 text-slate-700 font-medium">
-                <li className="flex items-center gap-4">
-                  <div className="w-8 h-px bg-red-600 shrink-0"></div>
-                  Bodegaje estructural certificado (DS 43)
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="w-8 h-px bg-red-600 shrink-0"></div>
-                  Transporte de residuos peligrosos y no peligrosos
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="w-8 h-px bg-red-600 shrink-0"></div>
-                  Retiro y traslado de basura industrial, madera y escombros
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="w-8 h-px bg-red-600 shrink-0"></div>
-                  Rotulación y señalización bajo NCh
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="w-8 h-px bg-red-600 shrink-0"></div>
-                  Entregable peligroso (Mensual o Única vez)
-                </li>
-              </ul>
+              
+              <p>
+                En el ámbito logístico, operamos como <strong>Transportistas Autorizados</strong> con Resolución Sanitaria para el retiro y traslado seguro de <strong>Residuos Peligrosos y No Peligrosos</strong>, respaldados por un estricto control de manifiestos de carga (SIDREP).
+              </p>
+
+              <p>
+                De manera complementaria, desarrollamos <strong>Proyectos en Terreno</strong> diseñando y construyendo soluciones de almacenamiento para Sustancias y Residuos Peligrosos directamente en sus instalaciones. Nuestro servicio abarca desde la fabricación de bateas y jaulas bajo la normativa NCh, hasta la tramitación integral de permisos sanitarios (DS 148, DS 43) y la capacitación especializada de su equipo operativo.
+              </p>
             </div>
           </div>
         </div>
@@ -131,9 +120,9 @@ export default function Servicios() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-10">
           <h2 className="text-4xl md:text-5xl font-black text-white uppercase">Trazabilidad Ambiental y Ley REP</h2>
           <div className="w-16 h-1 bg-red-600 mx-auto"></div>
-          <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
+          <div className="space-y-6 text-slate-300 text-lg leading-relaxed text-justify">
             <p>
-              Toda nuestra operación se rige por la <strong>Ley N° 20.920</strong> (Responsabilidad Extendida del Productor), fomentando el reciclaje a través del Sistema Nacional de Declaración de Residuos (<strong>SINADER</strong>).
+              Toda nuestra operación se rige por la <strong>Ley N° 20.920</strong> (Responsabilidad Extendida del Productor), fomentando el reciclaje a través del Sistema Nacional de Declaración de Residuos (<strong>SINADER</strong>). Contamos con <strong>Código identificador de Ventanilla Única del Ministerio del Medio Ambiente N.º 5478434</strong>.
             </p>
             <p>
               Los movimientos y excedentes de los generadores son declarados formalmente a través de la <strong>Ventanilla Única del Ministerio del Medio Ambiente (RETC)</strong>, garantizando por ley la correcta disposición final. Al concluir el proceso, emitimos y hacemos <strong>entrega de certificados de disposición final</strong> a nuestros clientes, otorgando respaldo total ante auditorías medioambientales.
