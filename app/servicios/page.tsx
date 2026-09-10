@@ -33,7 +33,7 @@ export default function Servicios() {
             <div className="w-12 h-1.5 bg-red-600"></div>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Nuestra operación en terreno se ejecuta directamente mediante nuestro servicio <strong>Transportes Metalysa</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll autocargantes para maniobras de precisión y retiro de alto tonelaje.
+                Nuestra operación en terreno se ejecuta directamente mediante nuestra alianza con <strong>Transportes Basualto Limitada</strong>. Contamos con una flota de camiones de modelos recientes equipados con sistemas hidráulicos Ampli-Roll autocargantes para maniobras de precisión y retiro de alto tonelaje.
               </p>
               <ul className="space-y-4 text-slate-700 font-medium">
                 <li className="flex items-start gap-4">

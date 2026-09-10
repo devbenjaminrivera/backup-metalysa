@@ -80,9 +80,9 @@ export default function Contacto() {
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="bg-slate-50 p-8 lg:p-10 rounded-xl border border-slate-100">
             <h3 className="text-2xl font-black text-slate-900 mb-6 uppercase">Envíanos un mensaje</h3>
-            
+
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
-              
+
               {submitted && !error && (
                 <div className="p-4 bg-green-50 border-l-4 border-green-600 text-green-900 font-medium text-sm">
                   Mensaje enviado exitosamente. Nuestro equipo se pondrá en contacto a la brevedad.
