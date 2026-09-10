@@ -3,35 +3,35 @@ import Image from 'next/image';
 
 export default function Nosotros() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       
-      {/*Hero Corporativo */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-slate-900 overflow-hidden">
+      {/* portada de nosotros */}
+      <section className="relative min-h-[300px] md:min-h-[400px] h-[40vh] md:h-[50vh] flex items-center justify-center bg-slate-900 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
           style={{ backgroundImage: "url('/img/empresa/interior%20empresa.png')" }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent"></div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-4">
-          <span className="text-red-500 font-bold tracking-[0.2em] uppercase text-sm">Sobre Metalysa Aceros</span>
-          <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-3 md:space-y-4 mt-8 md:mt-0">
+          <span className="text-red-500 font-bold tracking-[0.2em] uppercase text-xs md:text-sm">Sobre Metalysa Aceros</span>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
             Nuestra Historia
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 font-medium">
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium">
             Pioneros en el reciclaje de acero a nivel nacional desde 2014.
           </p>
         </div>
       </section>
 
-      {/* Historia y Evolución*/}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+      {/* la historia */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="space-y-6 lg:space-y-8">
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase leading-tight">
-              Liderazgo y <br/><span className="text-red-600">Evolución</span>
+              Liderazgo y <br className="hidden sm:block"/><span className="text-red-600">Evolución</span>
             </h2>
             <div className="w-12 h-1.5 bg-red-600"></div>
-            <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
+            <div className="space-y-4 lg:space-y-6 text-slate-600 text-base lg:text-lg leading-relaxed">
               <p>
                 El proyecto nace formalmente el <strong>año 2014</strong> en Talcahuano (Región del Biobío) impulsado por sus fundadores <strong>Luis Basualto</strong> e <strong>Isabel Álvarez</strong>. Su visión fue crear una solución logística y medioambiental robusta para los excedentes industriales que se acumulaban sin tratamiento en la región.
               </p>
@@ -52,19 +52,19 @@ export default function Nosotros() {
                 className="object-cover rounded-sm shadow-2xl"
               />
             </div>
-            {/* Elemento de diseño asimétrico */}
+            {/* adornos locos atras de la foto */}
             <div className="absolute -bottom-6 -left-6 w-3/4 h-3/4 border-b-8 border-l-8 border-slate-100 z-0"></div>
             <div className="absolute -top-6 -right-6 w-1/3 h-1/3 bg-red-600 z-0"></div>
           </div>
         </div>
       </section>
 
-      {/* Misión y Visión */}
-      <section className="bg-slate-50 py-24 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+      {/* mision y vision */}
+      <section className="bg-slate-50 py-16 md:py-24 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
             
-            <div className="space-y-6">
+            <div className="space-y-4 lg:space-y-6">
               <h3 className="text-2xl font-black text-slate-900 uppercase flex items-center gap-4">
                 <span className="w-8 h-1 bg-red-600"></span>
                 Nuestra Misión
@@ -86,10 +86,10 @@ export default function Nosotros() {
 
           </div>
 
-          {/* Valor del Reciclaje */}
-          <div className="mt-24 pt-16 border-t border-slate-200">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h3 className="text-2xl md:text-3xl font-medium text-slate-900 italic leading-snug">
+          {/* texto largo del reciclaje */}
+          <div className="mt-16 pt-12 md:mt-24 md:pt-16 border-t border-slate-200">
+            <div className="max-w-4xl mx-auto text-center space-y-6 lg:space-y-8">
+              <h3 className="text-xl md:text-3xl font-medium text-slate-900 italic leading-snug">
                 "Creemos firmemente que revalorizar residuos no solo es un deber ambiental, sino también una oportunidad para generar beneficios concretos."
               </h3>
               <p className="text-slate-600 text-lg leading-relaxed">
@@ -100,18 +100,18 @@ export default function Nosotros() {
         </div>
       </section>
 
-      {/* Infraestructura y Capacidad */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto space-y-16">
+      {/* fotos de la planta */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto space-y-10 lg:space-y-16">
         <div className="max-w-3xl">
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase leading-tight mb-6">
-            Infraestructura y <br/>Capacidad Operativa
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase leading-tight mb-4 lg:mb-6">
+            Infraestructura y <br className="hidden sm:block"/>Capacidad Operativa
           </h2>
-          <p className="text-slate-600 text-lg leading-relaxed">
+          <p className="text-slate-600 text-base lg:text-lg leading-relaxed">
             Planta de proceso autorizada, con Resolución Sanitaria para acopio y manejo de residuos ferrosos. Instalaciones de primer nivel diseñadas para alto tonelaje, pesaje de precisión y máxima seguridad perimetral.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
           
           <div className="group space-y-6">
             <div className="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">

@@ -16,6 +16,7 @@ export default function Contacto() {
     setLoading(true);
     setError(null);
 
+    // llaves de emailjs
     const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
     const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
     const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
@@ -36,23 +37,23 @@ export default function Contacto() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
 
-      {/* Contenedor Principal para Contacto y Formulario */}
-      <div className="w-full max-w-7xl mx-auto px-6 py-20 lg:px-8 flex flex-col lg:flex-row gap-16 xl:gap-24">
+      {/* bloque de arriba */}
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 flex flex-col lg:flex-row gap-12 lg:gap-16 xl:gap-24">
 
-        {/* Columna Izquierda: Información de Contacto */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center space-y-12">
+        {/* info a la izq */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-center space-y-8 sm:space-y-12">
 
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">
               Contacto <span className="text-red-600">Comercial</span>
             </h1>
             <div className="w-12 h-1.5 bg-red-600"></div>
-            <p className="text-slate-600 text-lg leading-relaxed pt-2">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
               Coordinemos el retiro, recepción y gestión integral de sus excedentes industriales de manera eficiente.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
             <div className="space-y-2">
               <span className="text-xs font-bold uppercase tracking-widest text-red-600 block mb-1">
                 Ubicación & Horario
@@ -76,12 +77,12 @@ export default function Contacto() {
           </div>
         </div>
 
-        {/* Columna Derecha: Formulario */}
+        {/* el form a la derecha */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <div className="bg-slate-50 p-8 lg:p-10 rounded-xl border border-slate-100">
-            <h3 className="text-2xl font-black text-slate-900 mb-6 uppercase">Envíanos un mensaje</h3>
+          <div className="bg-slate-50 p-6 sm:p-8 lg:p-10 rounded-xl border border-slate-100 shadow-sm sm:shadow-none">
+            <h3 className="text-xl sm:text-2xl font-black text-slate-900 mb-6 uppercase">Envíanos un mensaje</h3>
 
-            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
 
               {submitted && !error && (
                 <div className="p-4 bg-green-50 border-l-4 border-green-600 text-green-900 font-medium text-sm">
@@ -127,9 +128,9 @@ export default function Contacto() {
         </div>
       </div>
 
-      {/* Sección Inferior: Mapa */}
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-20">
-        <div className="w-full h-[400px] lg:h-[500px] bg-slate-200 relative rounded-xl overflow-hidden shadow-sm border border-slate-200">
+      {/* el mapa de google */}
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-20">
+        <div className="w-full h-[300px] sm:h-[400px] lg:h-[500px] bg-slate-200 relative rounded-xl overflow-hidden shadow-sm border border-slate-200">
           <iframe
             src="https://www.google.com/maps?q=Jaime+Repullo+385,+Talcahuano,+Chile&output=embed"
             width="100%"

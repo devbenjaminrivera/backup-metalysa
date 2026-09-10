@@ -16,17 +16,16 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // nav principal
   return (
     <>
-      {/* Spacer para evitar saltos en el layout al hacer el header fixed */}
+      {/* espacio invisible pa q no salte al inicio */}
       <div className="h-24 w-full"></div>
       <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-white shadow-sm'}`}>
 
 
-      {/* Nav Principal */}
+      {/* la barrita superior */}
       <nav className={`max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-16' : 'h-24'}`}>
-        {/* Logo Corporativo */}
+        {/* el logo */}
         <Link href="/" className="flex items-center group">
           <Image 
             src="/img/metalysa-logo.png" 
@@ -40,7 +39,7 @@ export default function Header() {
           />
         </Link>
 
-        {/* Links Desktop */}
+        {/* botones pa pc */}
         <div className="hidden md:flex items-center space-x-8 font-semibold text-slate-700 text-sm">
           <Link href="/" className="relative py-2 hover:text-red-600 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-red-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">
             Inicio
@@ -63,7 +62,7 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Boton Menu Movil */}
+        {/* boton hamburguesa */}
         <button 
           onClick={() => setIsOpen(!isOpen)} 
           aria-label="Toggle Navigation"
@@ -79,28 +78,28 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Desplegable Movil */}
+      {/* menu del celu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
-          <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
+        <div className="md:hidden bg-white border-b border-slate-200 px-6 pt-4 pb-8 space-y-2 shadow-2xl rounded-b-2xl">
+          <Link href="/" onClick={() => setIsOpen(false)} className="block py-3 text-lg text-slate-800 font-semibold hover:text-red-600 border-b border-slate-50">
             Inicio
           </Link>
-          <Link href="/productos" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
+          <Link href="/productos" onClick={() => setIsOpen(false)} className="block py-3 text-lg text-slate-800 font-semibold hover:text-red-600 border-b border-slate-50">
             Productos
           </Link>
-          <Link href="/servicios" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
+          <Link href="/servicios" onClick={() => setIsOpen(false)} className="block py-3 text-lg text-slate-800 font-semibold hover:text-red-600 border-b border-slate-50">
             Servicios
           </Link>
-          <Link href="/nosotros" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 font-semibold hover:text-red-600">
+          <Link href="/nosotros" onClick={() => setIsOpen(false)} className="block py-3 text-lg text-slate-800 font-semibold hover:text-red-600 border-b border-slate-50">
             Nosotros
           </Link>
           
           <Link 
             href="/contacto" 
             onClick={() => setIsOpen(false)} 
-            className="block text-center bg-red-600 text-white font-bold py-3 rounded mt-2 hover:bg-red-700 transition-colors"
+            className="block text-center bg-red-600 text-white font-bold py-4 rounded-xl mt-6 hover:bg-red-700 transition-colors shadow-md text-lg"
           >
-            Contacto
+            Contacto Directo
           </Link>
         </div>
       )}

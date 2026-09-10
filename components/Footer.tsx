@@ -2,13 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
-  // footer corporativo
+  // el footer de abajo
   return (
     <footer className="bg-slate-100 text-slate-600 border-t-4 border-red-600 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-10 md:py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
         
-        {/* Columna Marca */}
-        <div className="md:col-span-2 space-y-4">
+        {/* el logo y el texto */}
+        <div className="sm:col-span-2 md:col-span-2 space-y-4">
           <Image 
             src="/img/metalysa-logo.png" 
             alt="Logo Metalysa" 
@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Columna Navegacion */}
+        {/* los links */}
         <div className="space-y-3">
           <h3 className="text-slate-900 text-xs font-bold uppercase tracking-wider border-b border-slate-200 pb-2">
             Navegación
@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Columna Planta y Operaciones */}
+        {/* donde estamos */}
         <div className="space-y-3">
           <h3 className="text-slate-900 text-xs font-bold uppercase tracking-wider border-b border-slate-200 pb-2">
             Planta Talcahuano
