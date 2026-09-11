@@ -6,18 +6,20 @@ export default function Nosotros() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       
       {/* portada de nosotros */}
-      <section className="relative min-h-[300px] md:min-h-[400px] h-[40vh] md:h-[50vh] flex items-center justify-center bg-slate-900 overflow-hidden">
+      <section className="relative min-h-[450px] h-[55vh] flex items-center justify-center pt-24 bg-slate-900 overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/img/empresa/interior%20empresa.png')" }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent"></div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-3 md:space-y-4 mt-8 md:mt-0">
-          <span className="text-red-500 font-bold tracking-[0.2em] uppercase text-xs md:text-sm">Sobre Metalysa Aceros</span>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
+        <div className="absolute inset-0 bg-slate-800/70 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-transparent to-slate-900/40"></div>
+        
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-5 pb-8 sm:pb-16 mt-8 md:mt-0">
+          <span className="block mb-3 text-red-500 font-bold tracking-[0.3em] uppercase text-xs sm:text-sm drop-shadow-md">Sobre Metalysa Aceros</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight drop-shadow-md">
             Nuestra Historia
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-medium">
+          <p className="text-slate-200 text-lg max-w-2xl mx-auto font-medium drop-shadow">
             Pioneros en el reciclaje de acero a nivel nacional desde 2014.
           </p>
         </div>

@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
       {/* hero principal */}
-      <section className="relative min-h-[90vh] flex items-center bg-slate-950 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center pt-24 bg-slate-950 overflow-hidden">
         {/* fotito de fondo */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/img/empresa/camion_rojo_hd.jpg')" }}
         ></div>
 
-        {/* filtro pa oscurecer */}
+        {/* filtro para oscurecer */}
         <div className="absolute inset-0 bg-gray-900/40"></div>
 
         <div className="relative z-10 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 w-full py-16 sm:py-20 lg:py-0 mt-8 sm:mt-10 lg:mt-0">
