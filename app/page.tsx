@@ -84,7 +84,7 @@ export default function Home() {
           <div className="lg:w-2/3 grid gap-10 sm:gap-12 lg:border-l lg:border-slate-200 lg:pl-12">
             {[
               { num: '01', title: 'Interlocutor Único', desc: 'Al consolidar la gestión de todos sus flujos residuales con un solo socio estratégico, eliminamos la necesidad de coordinar múltiples proveedores. Esto reduce drásticamente su carga administrativa, minimiza los puntos de falla logística y le devuelve el control absoluto sobre sus operaciones.' },
-              { num: '02', title: 'Continuidad Operativa', desc: 'La acumulación de excedentes es un riesgo latente para la seguridad de su faena. Diseñamos planes logísticos a medida con retiros rigurosamente programados, garantizando un entorno de trabajo limpio, accesible y sin cuellos de botella que afecten su productividad.' },
+              { num: '02', title: 'Continuidad Operativa', desc: 'La acumulación de excedentes es un riesgo latente para la seguridad de su empresa. Diseñamos planes logísticos a medida con retiros rigurosamente programados, garantizando un entorno de trabajo limpio, accesible y sin cuellos de botella que afecten su productividad.' },
               { num: '03', title: 'Respaldo Documental', desc: 'Navegamos la complejidad normativa por usted. Entregamos evidencia documental impecable, incluyendo certificados de disposición final y trazabilidad en las plataformas exigidas por la autoridad sanitaria (SIDREP y SINADER), blindando a su empresa ante cualquier auditoría.' }
             ].map((b, i) => (
               <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
