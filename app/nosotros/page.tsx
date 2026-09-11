@@ -43,6 +43,10 @@ export default function Nosotros() {
               <p>
                 En Metalysa destacamos por un fuerte compromiso social y una estricta política de <strong>inclusión laboral</strong>, incorporando talento diverso y garantizando un entorno de trabajo plural y seguro.
               </p>
+
+              <p className="pl-6 border-l-2 border-red-600 font-medium italic text-slate-700 mt-8 leading-relaxed">
+                Expertise Metálico: "El apellido 'Aceros' no se oculta: es nuestra mayor credencial de especialización industrial. Nuestra profunda experiencia histórica procesando metales nos otorga un criterio técnico superior para clasificar, recuperar y gestionar de forma integral cualquier tipo de residuo industrial complejo."
+              </p>
             </div>
           </div>
           <div className="relative">
@@ -109,7 +113,7 @@ export default function Nosotros() {
             Infraestructura y <br className="hidden sm:block"/>Capacidad Operativa
           </h2>
           <p className="text-slate-600 text-base lg:text-lg leading-relaxed">
-            Planta de proceso autorizada, con Resolución Sanitaria para acopio y manejo de residuos ferrosos. Instalaciones de primer nivel diseñadas para alto tonelaje, pesaje de precisión y máxima seguridad perimetral.
+            Planta de proceso autorizada, con Resoluciones Sanitarias para acopio, manejo y segregación de residuos peligrosos (RESPEL) y no peligrosos. Instalaciones de primer nivel diseñadas para alto tonelaje, pesaje de precisión y trazabilidad documental.
           </p>
         </div>
 
@@ -122,7 +126,7 @@ export default function Nosotros() {
             <div className="space-y-3">
               <h4 className="text-xl font-black text-slate-900 uppercase">Planta de 6.000 m²</h4>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Más de 6.000 mt² totales con galpones techados superiores a 1.000 mt². Acondicionados para maniobras de grúas horquilla y camiones de gran envergadura.
+                Más de 6.000 mt² con galpones techados superiores a 1.000 mt². Acondicionados bajo estricta normativa para la segregación y almacenamiento seguro de residuos peligrosos y no peligrosos.
               </p>
             </div>
           </div>

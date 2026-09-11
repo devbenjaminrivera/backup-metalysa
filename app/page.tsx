@@ -68,50 +68,55 @@ export default function Home() {
       {/* carrusel de los clientes */}
       <ClientMarquee />
 
-      {/* las 3 columnas de abajo */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-20">
-          <span className="text-xs sm:text-sm font-bold text-red-600 uppercase tracking-widest block mb-3 sm:mb-4">
-            Público Objetivo
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase text-slate-900 leading-tight">
-            Soluciones para la Gran Industria y Construcción
-          </h2>
+      {/* valor estrategico y publico objetivo (Combo 1) */}
+      <section className="pt-20 md:pt-32">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="lg:w-1/3">
+            <span className="text-red-600 font-bold uppercase tracking-widest text-xs sm:text-sm block mb-4">Valor Estratégico</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 uppercase leading-tight mb-6">¿Por qué <br className="hidden lg:block"/> externalizar <br className="hidden lg:block"/> con <span className="text-red-600">Metalysa</span>?</h2>
+            <div className="w-12 h-1.5 bg-red-600 mb-6"></div>
+            <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed">
+              Asumimos el riesgo y el control logístico-ambiental para que su empresa se enfoque exclusivamente en su producción y crecimiento.
+            </p>
+          </div>
+          
+          <div className="lg:w-2/3 grid gap-10 sm:gap-12 lg:border-l lg:border-slate-200 lg:pl-12">
+            {[
+              { num: '01', title: 'Interlocutor Único', desc: 'Al consolidar la gestión de todos sus flujos residuales con un solo socio estratégico, eliminamos la necesidad de coordinar múltiples proveedores. Esto reduce drásticamente su carga administrativa, minimiza los puntos de falla logística y le devuelve el control absoluto sobre sus operaciones.' },
+              { num: '02', title: 'Continuidad Operativa', desc: 'La acumulación de excedentes es un riesgo latente para la seguridad de su faena. Diseñamos planes logísticos a medida con retiros rigurosamente programados, garantizando un entorno de trabajo limpio, accesible y sin cuellos de botella que afecten su productividad.' },
+              { num: '03', title: 'Respaldo Documental', desc: 'Navegamos la complejidad normativa por usted. Entregamos evidencia documental impecable, incluyendo certificados de disposición final y trazabilidad en las plataformas exigidas por la autoridad sanitaria (SIDREP y SINADER), blindando a su empresa ante cualquier auditoría.' }
+            ].map((b, i) => (
+              <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+                <span className="text-3xl sm:text-4xl font-black text-slate-300 w-12 flex-shrink-0 leading-none">{b.num}</span>
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase mb-3 leading-none">{b.title}</h3>
+                  <p className="text-slate-600 text-base sm:text-lg leading-relaxed">{b.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-16">
-          <div className="space-y-4 sm:space-y-6">
-            <div className="w-16 h-1 bg-red-600"></div>
-            <h3 className="text-xl sm:text-2xl font-black uppercase text-slate-900">
-              <span className="text-slate-400 sm:text-slate-300 block text-xs sm:text-sm mb-1 sm:mb-2">01 // RECOLECCIÓN</span>
-              Captación de Chatarra
-            </h3>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Gestión integral de descartes metálicos (fierro, pletina, planchas) acumulados en instalaciones industriales y faenas civiles, asegurando un retiro limpio y eficiente.
-            </p>
-          </div>
-
-          <div className="space-y-4 sm:space-y-6">
-            <div className="w-16 h-1 bg-slate-900"></div>
-            <h3 className="text-xl sm:text-2xl font-black uppercase text-slate-900">
-              <span className="text-slate-400 sm:text-slate-300 block text-xs sm:text-sm mb-1 sm:mb-2">02 // ACONDICIONAMIENTO</span>
-              Procesamiento
-            </h3>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Selección, corte mecánico y preparación técnica de barras de construcción y pletinas para cumplir exactamente con el estándar de las siderúrgicas nacionales.
-            </p>
-          </div>
-
-          <div className="space-y-4 sm:space-y-6">
-            <div className="w-16 h-1 bg-slate-400"></div>
-            <h3 className="text-xl sm:text-2xl font-black uppercase text-slate-900">
-              <span className="text-slate-400 sm:text-slate-300 block text-xs sm:text-sm mb-1 sm:mb-2">03 // RESPEL Y NO PELIGROSOS</span>
-              Gestión Integral
-            </h3>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Control operacional de punta a punta para residuos peligrosos y no peligrosos. Desde el diagnóstico y almacenamiento hasta su logística, valorización y trazabilidad documental.
-            </p>
-          </div>
+        <div className="bg-slate-50 py-20 px-4 sm:px-6 lg:px-8 border-y border-slate-200 w-full mt-8 md:mt-12">
+           <div className="mb-16 text-center max-w-3xl mx-auto">
+              <span className="text-red-600 font-bold uppercase tracking-widest text-xs sm:text-sm block mb-4">Público Objetivo</span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase leading-tight">Soluciones Integrales para la Gran Industria</h2>
+           </div>
+           
+           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 divide-y md:divide-y-0 md:divide-x divide-slate-300">
+              {[
+                { sub: 'RECOLECCIÓN', title: 'Captación de Chatarra', desc: 'Desarrollamos logística de alta capacidad para el retiro de descartes metálicos estructurales (fierro de construcción, pletinas, planchas) acumulados en grandes maestranzas, obras civiles y talleres mecánicos, asegurando un despeje rápido y eficiente.' },
+                { sub: 'ACONDICIONAMIENTO', title: 'Procesamiento Industrial', desc: 'Acondicionamos el material recuperado mediante técnicas de oxicorte y cizallado, preparando la chatarra metálica para cumplir estrictamente con los exigentes estándares de densidad y tamaño requeridos por las siderúrgicas nacionales.' },
+                { sub: 'RESPEL Y NO PELIGROSOS', title: 'Gestión Integral', desc: 'Proveemos un control operacional especializado para residuos industriales complejos. Incluimos diagnóstico técnico, diseño de almacenamiento (bateas/jaulas) y tramitación de permisos sanitarios bajo normativas DS 148 y DS 43.' }
+              ].map((p, i) => (
+                <div key={i} className="pt-8 md:pt-0 md:px-10 first:md:pl-0 last:md:pr-0 hover:-translate-y-1 transition-transform duration-300">
+                  <span className="text-xs font-bold text-red-600 tracking-widest mb-3 block">{p.sub}</span>
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase mb-4 leading-tight">{p.title}</h3>
+                  <p className="text-slate-600 text-base leading-relaxed">{p.desc}</p>
+                </div>
+              ))}
+           </div>
         </div>
       </section>
 

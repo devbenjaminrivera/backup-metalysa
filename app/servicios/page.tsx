@@ -113,6 +113,56 @@ export default function Servicios() {
         </div>
       </section>
 
+      {/* 8 pasos */}
+      <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+          <div className="lg:w-1/3 flex-shrink-0">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 uppercase">
+              Modelo de <br className="hidden lg:block"/><span className="text-red-600">Punta a Punta</span>
+            </h2>
+            <div className="w-12 h-1.5 bg-red-600 mt-6 mb-6"></div>
+            <div className="space-y-4 mt-6">
+              <p className="text-slate-600 text-lg leading-relaxed">
+                Asumimos el control total del ciclo de vida de sus residuos industriales. Nuestro modelo no es solo logística; es una <strong className="text-slate-900 font-bold">alianza estratégica</strong> diseñada para liberar a su empresa de la carga administrativa y el riesgo normativo.
+              </p>
+              <p className="text-slate-600 text-base leading-relaxed">
+                Desde el catastro inicial en su faena hasta la emisión de los certificados finales exigidos por ley (SIDREP/SINADER), garantizamos <strong className="text-slate-900 font-bold">trazabilidad absoluta, cumplimiento ambiental y continuidad operativa</strong>, permitiéndole enfocar sus recursos exclusivamente en el núcleo de su negocio.
+              </p>
+            </div>
+          </div>
+
+          <div className="lg:w-2/3 overflow-x-auto w-full">
+            <table className="w-full text-left border-collapse min-w-[600px]">
+              <thead>
+                <tr className="border-b-2 border-slate-900 text-slate-900 uppercase text-sm tracking-widest">
+                  <th className="py-4 px-2 w-20">Fase</th>
+                  <th className="py-4 px-2 w-48 sm:w-64">Proceso</th>
+                  <th className="py-4 px-2">Detalle Operativo</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-700">
+                {[
+                  { num: '01', title: 'Diagnóstico', desc: 'Catastro de residuos, tipologías y volumen en terreno.' },
+                  { num: '02', title: 'Clasificación', desc: 'Segregación en origen para maximizar recuperación.' },
+                  { num: '03', title: 'Diseño', desc: 'Definición de bateas, jaulas y estanques a medida.' },
+                  { num: '04', title: 'Implementación', desc: 'Instalación y capacitación de su personal.' },
+                  { num: '05', title: 'Logística', desc: 'Retiro programado y seguimiento de ingreso/salida.' },
+                  { num: '06', title: 'Pesaje', desc: 'Registro en romana certificada de 60 toneladas.' },
+                  { num: '07', title: 'Disposición', desc: 'Valorización o disposición final segura.' },
+                  { num: '08', title: 'Reporte', desc: 'Certificados, SIDREP y trazabilidad mensual.' }
+                ].map((step, idx) => (
+                  <tr key={idx} className="border-b border-slate-200 hover:bg-slate-300 transition-colors">
+                    <td className="py-4 px-2 font-black text-slate-400">{step.num}</td>
+                    <td className="py-4 px-2 font-black uppercase text-slate-900">{step.title}</td>
+                    <td className="py-4 px-2">{step.desc}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* fondo negro de la ley rep */}
       <section className="relative py-20 md:py-32 bg-slate-900 overflow-hidden">
         <div 
