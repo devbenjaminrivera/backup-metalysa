@@ -7,7 +7,7 @@ export default function Footer() {
       {/* Imagen de fondo (Solo visible en pantallas medianas o grandes) */}
       <div className="absolute inset-0 z-0 pointer-events-none hidden md:block">
         <Image 
-          src="/img/3.jpg" 
+          src="/img/footer.jpg" 
           alt="Fondo footer"
           fill
           className="object-fill object-center opacity-80"

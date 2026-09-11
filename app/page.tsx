@@ -48,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* barrita roja con numeros */}
-      <section className="bg-red-600 text-white">
+      <section className="bg-red-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-red-500/50">
           <div className="py-4 md:py-0">
             <span className="text-4xl sm:text-5xl font-black block mb-1 sm:mb-2">+800 TON</span>
@@ -105,11 +105,11 @@ export default function Home() {
           <div className="space-y-4 sm:space-y-6">
             <div className="w-16 h-1 bg-slate-400"></div>
             <h3 className="text-xl sm:text-2xl font-black uppercase text-slate-900">
-              <span className="text-slate-400 sm:text-slate-300 block text-xs sm:text-sm mb-1 sm:mb-2">03 // INSUMOS</span>
-              Química Ambiental
+              <span className="text-slate-400 sm:text-slate-300 block text-xs sm:text-sm mb-1 sm:mb-2">03 // RESPEL Y NO PELIGROSOS</span>
+              Gestión Integral
             </h3>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Suministro de material base esencial para la síntesis de cloruro férrico, un componente aplicado directamente en las tecnologías modernas de desalinización marina.
+              Control operacional de punta a punta para residuos peligrosos y no peligrosos. Desde el diagnóstico y almacenamiento hasta su logística, valorización y trazabilidad documental.
             </p>
           </div>
         </div>
