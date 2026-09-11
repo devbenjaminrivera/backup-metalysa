@@ -10,7 +10,7 @@ export default function Footer() {
           src="/img/3.jpg" 
           alt="Fondo footer"
           fill
-          className="object-contain object-center opacity-80"
+          className="object-fill object-center opacity-80"
         />
         {/* Overlay oscuro para asegurar la legibilidad del texto */}
         <div className="absolute inset-0 bg-neutral-900/80"></div>
